@@ -1,5 +1,5 @@
 import { Action } from '../actions/actionsDefinition';
-import { Product, State } from '../types/index';
+import { Product, State } from '../../types/index';
 
 const initState = {
     products: [],

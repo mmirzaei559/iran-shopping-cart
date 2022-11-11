@@ -1,5 +1,5 @@
 import { Dispatch } from 'redux';
-import { ActionType } from '../types';
+import { ActionType } from '../../types';
 import { Action } from './actionsDefinition';
 
 export const selectProduct = (id: number) => {

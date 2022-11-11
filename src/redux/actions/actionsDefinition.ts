@@ -1,5 +1,5 @@
-import Product from '../../interfaces/product';
-import { ActionType } from '../types';
+import { Product } from '../../types/index';
+import { ActionType } from '../../types';
 
 interface SelectProduct_Action {
     type: ActionType.SELECT_PRODUCT;
