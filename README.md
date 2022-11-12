@@ -7,7 +7,7 @@
 Clone this repository:
 
 ```
-git clone https://github.com/mmirzaei559/shopping-cart.git
+git clone https://github.com/mmirzaei559/iran-shopping-cart.git
 ```
 
 Install npm packages:
