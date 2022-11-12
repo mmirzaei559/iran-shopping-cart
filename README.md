@@ -1,4 +1,5 @@
 ## Iran Shopping Cart
+
 ![image](src/assets/app.png)
 
 #### Installation and use
@@ -6,7 +7,7 @@
 Clone this repository:
 
 ```
-git clone https://github.com/mmirzaei559/iran-shopping-cart.git
+git clone https://github.com/mmirzaei559/shopping-cart.git
 ```
 
 Install npm packages:
