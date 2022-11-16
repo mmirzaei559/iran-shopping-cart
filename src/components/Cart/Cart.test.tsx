@@ -1,10 +1,10 @@
 import React from 'react';
-import {render, screen} from '@testing-library/react';
-import {Provider} from "react-redux";
-import Cart from "./Cart";
-import {createMemoryHistory} from 'history'
-import store from "../../redux/store/store";
-import {Route, Router} from 'react-router-dom';
+import { render, screen } from '@testing-library/react';
+import { Provider } from 'react-redux';
+import Cart from './Cart';
+import { createMemoryHistory } from 'history';
+import { store } from '../../state-center/store/store';
+import { Route, Router } from 'react-router-dom';
 
 // describe('Cart component', () => {
 //     store.dispatch({type: 'ADD_TO_CART', payload: {productInCart:{

@@ -2,9 +2,9 @@ import React from 'react';
 import { fireEvent, render } from '@testing-library/react';
 import { Router } from 'react-router-dom';
 import { createMemoryHistory } from 'history';
-import store from "../../redux/store/store";
-import {Provider} from "react-redux";
-import Home from "./home";
+import { store } from '../../state-center/store/store';
+import { Provider } from 'react-redux';
+import Home from './Home';
 
 // describe('home page component', () => {
 //     test('click on a specific product then route to the product detail page', () => {

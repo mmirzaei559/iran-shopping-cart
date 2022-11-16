@@ -1,7 +1,7 @@
-import { Route } from '../types/index';
-import Home from '../components/Home/home';
-import Details from '../components/Detail/Detail';
-import Cart from '../components/Cart/Cart';
+import Home from '../components/home/Home';
+import ProductDetail from '../components/product/ProductDetail';
+import Cart from '../components/cart/Cart';
+import { Route } from '../interfaces/index';
 
 const routes: Route[] = [
     {
@@ -11,9 +11,9 @@ const routes: Route[] = [
         exact: true,
     },
     {
-        path: '/details/:id',
-        name: 'details',
-        component: Details,
+        path: '/product-detail/:id',
+        name: 'productDetail',
+        component: ProductDetail,
         exact: true,
     },
     {

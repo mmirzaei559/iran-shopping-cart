@@ -1,14 +1,30 @@
-import React from 'react';
-import {BrowserRouter, Route, Switch, RouteComponentProps} from 'react-router-dom';
+import React, { useEffect } from 'react';
+import axios from 'axios';
+import { BrowserRouter, Route, Switch, RouteComponentProps } from 'react-router-dom';
+import { bindActionCreators } from 'redux';
+import { actionsUsage } from './state-center';
+import { useDispatch } from 'react-redux';
 import routes from './config/routes';
+import Nav from './components/nav/Nav';
 import './styles/App.scss';
-import Nav from "./components/Nav/Nav";
 
 const App: React.FC = () => {
+    const dispatch = useDispatch();
+    const { stackingProductsInState } = bindActionCreators(actionsUsage, dispatch);
+
+    useEffect(() => {
+        axios
+            .get('data.json')
+            .then((res) => {
+                stackingProductsInState(res.data.products);
+            })
+            .catch((err) => console.log(err));
+    }, []);
+
     return (
         <div>
             <BrowserRouter>
-                <Nav/>
+                <Nav />
                 <Switch>
                     {routes.map((route, index) => {
                         return (
@@ -30,6 +46,6 @@ const App: React.FC = () => {
             </BrowserRouter>
         </div>
     );
-}
+};
 
 export default App;
